@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    overflow: hidden;
+    background-color: #380c0c;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    color: rgb(250, 210, 5);
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 5px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 4px rgb(250, 210, 5) solid;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.content {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottom {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    z-index: 2;
+    width: 100%;
+}
+
+.bottom a {
+    background-color: #431414;
+    border: 2px rgb(250, 210, 5) solid;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1026px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .penguin-hammer {
+        display: none;
+    }
+    
+    .penguin-sickle {
+        display: none;
+    }
+
+    .bottom {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+
+@media only screen and (min-width: 1026px) {
+    .header h1 {
+        font-size: 4rem;
+    }
+
+    .content {
+        width: 35%;
+    }
+
+    .bottom {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .penguin-hammer {
+        position: absolute;
+        top: 75%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+        padding: 25px;
+        z-index: 2;
+        width: 35%;
+    }
+    
+    .penguin-sickle {
+        position: absolute;
+        top: 70%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        padding: 25px;
+        z-index: 2;
+        width: 35%;
+    }
+}
+
+.bg {
+    background-image: url(assets/background.png);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;  
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
